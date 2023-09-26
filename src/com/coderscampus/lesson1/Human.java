@@ -1,6 +1,7 @@
 package com.coderscampus.lesson1;
 
 public class Human {
+	// calss variables
 	static int TEENAGER_AGE = 13;
 	static int ADULT_AGE = 19;
 	static int SENIOR_AGE = 65;

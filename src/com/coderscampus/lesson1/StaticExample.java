@@ -13,11 +13,15 @@ public class StaticExample {
 			System.out.println("say something");
 		}
 
-		Human.getStageOfLife();
-		
 		Human aChild = new Human();
 		aChild.age = 12;
+		if (aChild.ADULT_AGE < 10);
 		System.out.println(aChild.getStageOfLife());
+
+		Human anAdult = new Human();
+		anAdult.age = 19;
+		System.out.println(anAdult.getStageOfLife());
+	
 	}
 
 }
