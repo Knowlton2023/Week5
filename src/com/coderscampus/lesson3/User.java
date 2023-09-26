@@ -2,6 +2,7 @@ package com.coderscampus.lesson3;
 
 // POJO = Plain Old Java Object
 public class User {
+	
 	// instance variables (declared as private)
 	private String username;
 	private String password;
