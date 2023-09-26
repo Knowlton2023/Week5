@@ -12,7 +12,12 @@ public class StaticExample {
 		if (staticObject.someNumber > 11) {
 			System.out.println("say something");
 		}
+
+		Human.getStageOfLife();
 		
+		Human aChild = new Human();
+		aChild.age = 12;
+		System.out.println(aChild.getStageOfLife());
 	}
 
 }
