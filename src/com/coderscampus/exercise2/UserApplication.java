@@ -6,7 +6,6 @@ public class UserApplication {
 
 	public static void main(String[] args) {
 		UserService userService = new UserService();
-//		String[] stringInput = {"aUSernameHere", "aPasswordHere", "Sombodies Name"};
 		String[] stringInput = new String[3];
 		stringInput[0] = "aUsernameHere";
 		stringInput[1] = "aPasswordHere";
@@ -17,27 +16,6 @@ public class UserApplication {
 			users[i] = userService.createUser(stringInput[0], stringInput[1], stringInput[2]);
 		}
 
-		System.out.println(Arrays.toString(stringInput));
-//		System.out.println(Arrays.toString(users[0]));
-
-//		System.out.println(Arrays.toString(stringInput));
-//		
-////		userService.createUser(stringInput);
-//		
-//
-//		String[] stringInput2 = new String[3];
-//		stringInput2[0] = "aUsernameHere";
-//		stringInput2[1] = "aPasswordHere";
-//		stringInput2[2] = "Sombodies Name";
-//
-//		System.out.println(Arrays.toString(stringInput2));
-//		
-
-//		stringInput[0] = userService.createUser("aUsernameHere", null, null);
-//		stringInput[1] = userService.createUser(null, "aPasswordHere", null);
-//		stringInput[2] = userService.createUser(null, null, "Somebodies Name");
-//
-//		System.out.println(stringInputs);
 
 //        // Create an array of strings with 3 elements
 //        String[] stringInputs = new String[3];
