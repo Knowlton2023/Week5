@@ -6,21 +6,20 @@ public class UserApplication {
 
 	public static void main(String[] args) {
 		UserService userService = new UserService();
-		String[] stringInput = {"aUSernameHere", "aPasswordHere", "Sombodies Name"};
-//		stringInput[0] = "aUsernameHere";
-//		stringInput[1] = "aPasswordHere";
-//		stringInput[2] = "Sombodies Name";
+//		String[] stringInput = {"aUSernameHere", "aPasswordHere", "Sombodies Name"};
+		String[] stringInput = new String[3];
+		stringInput[0] = "aUsernameHere";
+		stringInput[1] = "aPasswordHere";
+		stringInput[2] = "Sombodies Name";
 
 		User[] users = new User[1];
 		for (int i = 0; i < 1; i++) {
 			users[i] = userService.createUser(stringInput[0], stringInput[1], stringInput[2]);
 		}
 
-		System.out.println(Arrays.toString(users));
+		System.out.println(Arrays.toString(stringInput));
 //		System.out.println(Arrays.toString(users[0]));
-		
-		
-		
+
 //		System.out.println(Arrays.toString(stringInput));
 //		
 ////		userService.createUser(stringInput);
@@ -33,16 +32,13 @@ public class UserApplication {
 //
 //		System.out.println(Arrays.toString(stringInput2));
 //		
-		
-		
-		
+
 //		stringInput[0] = userService.createUser("aUsernameHere", null, null);
 //		stringInput[1] = userService.createUser(null, "aPasswordHere", null);
 //		stringInput[2] = userService.createUser(null, null, "Somebodies Name");
 //
 //		System.out.println(stringInputs);
 
-		
 //        // Create an array of strings with 3 elements
 //        String[] stringInputs = new String[3];
 //
@@ -55,9 +51,7 @@ public class UserApplication {
 //        System.out.println("Element at index 0: " + stringInputs[0]);
 //        System.out.println("Element at index 1: " + stringInputs[1]);
 //        System.out.println("Element at index 2: " + stringInputs[2]);
-		
-		
-	
+
 	}
 
 }
