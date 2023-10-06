@@ -3,6 +3,11 @@ package com.coderscampus.exercise2;
 //POJO = Plain Old Java Object
 public class User {
 	
+	@Override
+	public String toString() {
+		return "User [username=" + username + ", password=" + password + ", name=" + name + "]";
+	}
+
 	// instance variables (declared as private)
 	private String username;
 	private String password;
