@@ -16,7 +16,11 @@ public class UserApplication {
 			users[i] = userService.createUser(stringInput[0], stringInput[1], stringInput[2]);
 		}
 
+		users[0] = userService.createUser(stringInput[0], stringInput[1], stringInput[2]);
 
+		
+		
+		
 //        // Create an array of strings with 3 elements
 //        String[] stringInputs = new String[3];
 //
