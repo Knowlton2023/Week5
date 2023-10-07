@@ -10,9 +10,19 @@ public class UserService {
 		return user;
 	}
 
-	public String[] parseText(String input) {
+	public User createUser2 (String[] stringInput) {
+		User user2 = new User();
+		user2.setUsername(stringInput[0]);
+		user2.setPassword(stringInput[1]);
+		user2.setName(stringInput[2]);
+		return user2;
+	}
 
-		return null;
+	
+	
+	public String[] parseText (String inputs) {
+		String[] splitString = inputs.split(",");
+		return splitString;
 	}	
 	
 	
