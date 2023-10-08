@@ -1,17 +1,16 @@
 package com.coderscampus.lesson10;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class FileIOExample2 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		BufferedReader fileReader = null;
 		try {
-			fileReader = new BufferedReader(new FileReader("data.txt"));
+			fileReader = new BufferedReader(new FileReader("non-existing-file.txt"));
 
 			String line = "";
 			while ((line = fileReader.readLine()) != null) {
@@ -19,12 +18,8 @@ public class FileIOExample2 {
 			}
 			
 		} finally {
-			try {
-				System.out.println("Closing file reader");
-				fileReader.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			System.out.println("Closing file reader");
+			fileReader.close();
 		}
 	}
 }
