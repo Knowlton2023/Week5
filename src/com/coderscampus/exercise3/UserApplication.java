@@ -12,8 +12,10 @@ public class UserApplication {
 		System.out.println("Password: " + users[0].getPassword());
 		System.out.println("Name: " + users[0].getName());
 
-		for (String[] user : users) {
-			System.out.println(user);
+		for (User user : users) {
+			System.out.println(user.getUsername());
+			System.out.println(user.getPassword());
+			System.out.println(user.getName());
 		}
 		
 		String[] stringInput = {"aUsernameHere","aPasswordHere","Sombodies Name"};
